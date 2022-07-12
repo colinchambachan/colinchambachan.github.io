@@ -21,42 +21,42 @@
 
 <body>
       <!--navbar-->
-      <nav class="navbar sticky-md-top navbar-expand-md navbar-light bg-white">
+      <nav class="navbar sticky-md-top navbar-expand-md navbar-light bg-white mb-3">
         <!-- we dont want the content to flow from all the way on one side to the other, so we'll create a container-->
         <div class="container-xl">
               <!--"brand"--> 
             <a href="#intro" class="navbar-brand"> 
-                <span class="fw-bold text-secondary">
+                <span class="fw-bold text-dark">
                     colin chambachan
                 </span>
             </a> 
             
             <!-- toggle button for mobile nav -->
-            <button class=" navbar-toggler " type="button" 
+           <!--  <button class=" navbar-toggler " type="button" 
             data-bs-toggle="collapse" data-bs-target="#main-nav" 
             aria-controls="main-nav" aria-expanded="false" aria-label="Toggle Navigation"
             >
                 <span class="navbar-toggler-icon"></span>
             
-            </button>
+            </button> -->
             
             <!-- Navbar links -->
             <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link" href="#topics">About the Book</a>
+                    <a class="nav-link" href="#topics">about me</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#reviews">Reviews</a>
+                    <a class="nav-link" href="#reviews">projects</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#contact">Get in Touch</a>
+                    <a class="nav-link" href="#contact">blog</a>
                   </li>
                   <li class="nav-item d-md-none">
-                    <a class="nav-link" href="#pricing">Pricing</a>
+                    <a class="nav-link" href="#pricing">contact</a>
                   </li>
                   <li class="nav-item ms-md-2 d-none d-md-inline">
-                    <a class="btn btn-primary" href="#pricing">Buy Now</a>
+                    <a class="btn btn-dark" href="#pricing">contact</a>
                   </li>
                   
                 </ul>
@@ -67,38 +67,51 @@
 
       <!-- main intro and image -->
       <section id = "intro">
-        <div class="container-lg">
-            <div class="row justify-content-center align-items-center d-flex">
-                
-                <div class="col-md-5 text-center d-none d-md-block flex-grow-1">
-                    <img class ="w-75 rounded-circle shadow-lg" src="Images\landing.JPG" alt=""> 
+          <div class="masthead" style="background-color: white;">  
+            <div class="container-lg">
+                <div class="row justify-content-center align-items-center d-flex">
+
+                    <div class="col-md-5 text-center d-none d-md-block flex-grow-1">
+                        <img class ="w-75 rounded-circle shadow-lg" src="Images\landing.JPG" alt=""> 
+                    </div>
+
+
+                    <div class="col-md-5 text-center text-md-start flex-grow-1">
+                        <h1>
+                            <div class="display-5 text-muted">Hi there,</div>
+                            <div class="display-2">I'm Colin!</div>
+                        </h1>
+
+                        <p class="lead my-2 text-muted">
+                            An Eng 1 Student @ McMaster University :D 
+                        
+                        </p>
+
+                    </div>
+
+
+
+
+
                 </div>
-
-
-                <div class="col-md-5 text-center text-md-start flex-grow-1">
-                    <h1>
-                        <div class="display-5 text-muted">Hi there,</div>
-                        <div class="display-2">I'm Colin!</div>
-                    </h1>
-
-                    <p class="lead my-2 text-muted">
-                        An Eng 1 Student @ McMaster University :D 
-                    
-                    </p>
-                    <!-- <a href="#pricing" class = "btn btn-secondary btn-lg">Buy Now</a>  -->
-
-                </div>
-
-
-
-                
 
             </div>
-
         </div>
         </section>
 
+hello
 
+
+<!-- <script>
+    window.addEventListener('scroll',(e)=>{
+      const nav = document.querySelector('.nav');
+      if(window.scrollY>0){
+        nav.classList.add("add-shadow");
+      }else{
+        nav.classList.remove("add-shadow");
+      }
+    });
+  </script> -->
 </body>
 
 

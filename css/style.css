@@ -2,3 +2,13 @@
 	margin-inline-end: 6px !important;
 }
  */
+
+ .masthead{
+	background-size: cover;
+	min-height: 90vh;
+	position: relative;
+ }
+
+ .add-shadow{
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.22);
+  }

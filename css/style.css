@@ -1,17 +1,14 @@
 /* .tab-icon-image:not([pinned]) {
 	margin-inline-end: 6px !important;
 }
-<<<<<<< Updated upstream
- */
-=======
- */
-
+*/
 
  .masthead{
 	background-size: cover;
 	min-height: 90vh;
 	position: relative;
  }
+
 
 
 .restrict-text{
@@ -41,7 +38,3 @@ section {
 	}
  } */
 
-/*  .add-shadow{
-	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.22);
-  } */
->>>>>>> Stashed changes

@@ -21,9 +21,24 @@
 
  /* to avoid navbar covering content */
 section {
-	padding-top: 75px;
+	padding-top: 85px;
 }
- 
+#intro{
+	padding-top: 100px;
+}
+
+
+
+
+.icon {
+	margin-bottom: 5px;
+	text-decoration: none;
+}
+
+
+.carousel-item > img{
+	border: 2px solid black;
+}
 
 /* @media (max-width: 600px) { 
 	section{

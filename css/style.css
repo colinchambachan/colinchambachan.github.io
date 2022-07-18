@@ -3,14 +3,14 @@
 }
 */
 
+/* make landing page fit entire screen */
  .masthead{
 	background-size: cover;
 	min-height: 90vh;
 	position: relative;
  }
 
-
-
+/* restrict text for visibility */
 .restrict-text{
 	max-width: 900px;
  }
@@ -39,6 +39,15 @@ section {
 .carousel-item > img{
 	border: 2px solid black;
 }
+
+
+header.nav-fixed {
+    width: 100%;
+    position: fixed;
+    transition: 0.3s ease-in-out;
+}
+
+
 
 /* @media (max-width: 600px) { 
 	section{

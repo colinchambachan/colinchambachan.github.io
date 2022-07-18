@@ -1,2 +1,7 @@
-# personal-website
- personal website displaying projects, hobbies, and portfolio
+# colinchambachan.me
+
+![Website landing page](Images\homescreen.png "Website landing page")
+
+
+
+

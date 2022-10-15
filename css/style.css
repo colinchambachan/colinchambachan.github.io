@@ -4,61 +4,63 @@
 */
 
 /* make landing page fit entire screen */
- .masthead{
-	background-size: cover;
-	min-height: 90vh;
-	position: relative;
- }
+.masthead {
+  background-size: cover;
+  min-height: 90vh;
+  position: relative;
+}
 
 /* restrict text for visibility */
-.restrict-text{
-	max-width: 900px;
- }
+.restrict-text {
+  max-width: 900px;
+}
 
- ol li{
-	padding-bottom: 10px;
- }
+ol li {
+  padding-bottom: 10px;
+}
 
- /* to avoid navbar covering content */
+/* to avoid navbar covering content */
 section {
-	padding-top: 85px;
+  padding-top: 85px;
 }
-#intro{
-	padding-top: 100px;
+#intro {
+  padding-top: 100px;
 }
-
-
-
 
 .icon {
-	margin-bottom: 5px;
-	text-decoration: none;
+  margin-bottom: 5px;
+  text-decoration: none;
 }
 
-
-.carousel-item > img{
-	border: 2px solid black;
+.carousel-item > img {
+  border: 2px solid black;
 }
-
 
 header.nav-fixed {
-    width: 100%;
-    position: fixed;
-    transition: 0.3s ease-in-out;
+  width: 100%;
+  position: fixed;
+  transition: 0.3s ease-in-out;
 }
 
+/* Typewriting animation */
+#fluidDescription {
+  color: #3bc4d9;
+  font-weight: bold;
+}
 
+#cursor {
+  color: #3bc4d9;
+  display: inline;
+  font-size: x-large;
+  padding-left: 0;
+  animation: blink 1s linear infinite;
+}
 
-/* @media (max-width: 600px) { 
-	section{
-	   padding-left: 15px;
-	}
- }
- 
- @media (min-width: 601px) { 
-	section{
-	   padding-top: 15px;
-	   padding-left:0;
-	}
- } */
-
+@keyframes blink {
+  0% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 0%;
+  }
+}

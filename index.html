@@ -17,10 +17,12 @@
     <link rel="stylesheet" href="css\style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
+    <!-- Javscript Script -->
     <script type="module" src="js\typewriter.js"></script>
     <script type="module" src="js\scrolling.js"></script>
     <script src="js\drop-shadow.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  
 </head>
 
 
@@ -35,7 +37,7 @@
                     colin chambachan
                 </span>
             </a>  -->
-             <a href="#intro" class="navbar-brand col-4 col-sm-6"> 
+             <a href="#intro" class="navbar-brand col-6"> 
               <img src="Images\logosCropped.jpg" class="w-25"alt="">
             </a>
             
@@ -51,9 +53,9 @@
                   <li class="nav-item">
                     <a class="nav-link" href="#about-me">about me</a>
                   </li>
-                  <!-- <li class="nav-item">
+                  <li class="nav-item">
                     <a class="nav-link" href="#projects">projects</a>
-                  </li> -->
+                  </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#life-as-slides">life as slides</a>
                   </li>
@@ -74,8 +76,12 @@
       <section id = "intro">
           <div class="masthead" style="background-color: white;">  
             <div class="container-lg">
-                <div class="row justify-content-center align-items-center d-flex">
+<!--               
+              <div class="col-md-0 col-8 text-center ">
+                <img class ="w-75 rounded-circle shadow-lg" src="Images\landing.JPG" alt=""> 
+              </div>  -->
 
+              <div class="row justify-content-center align-items-center d-flex">
                     <div class="col-md-5 text-center d-none d-md-block flex-grow-1">
                         <img class ="w-75 rounded-circle shadow-lg" src="Images\landing.JPG" alt=""> 
                     </div>
@@ -97,13 +103,12 @@
             
         </div>
         </section>
-
+        
 
         <!-- **about me** -->
-        <section id="about-me">
-            <div class="masthead " style="background-color: white;">  
+        <section id="about-me" class="">
               <div class="container">
-                    <div class="row text-center d-flex justify-content-center align-items-center mb-0 ">
+                    <div class="row text-center d-flex justify-content-center align-items-center mb-0 pt-0">
                         <h1>
                             <div class="display-5 text-dark">about me</div>
                         </h1>
@@ -115,13 +120,15 @@
 
                             <p>
                               There are two main reasons that drive my passion for programming:
+                            </p>
                               <ol>
                                 <li> Programming is all about how we can take our "superficial" and "intangible" ideas and create 
-                                  logical explanations so that we can effectively communicate them to others and computers.</ul>
+                                  logical explanations so that we can effectively communicate them to others and computers.
+                                </li>
                                 
                                 <li>Building Software, like creating music, involves taking small individual components and connecting them together to create an amazing result, a process that requires both creativity and the attention for detail and technique. </li>
-                            </ol>
-                            </p>
+                              </ol>
+                            
 
                             <p>
                               Some of my interests are web development &#127760;, game development &#127918;, machine learning &#129504;, and competitive programming &#127919;. I'm always 
@@ -137,29 +144,111 @@
 
                 </div>
 
-                </div>
 
-        </div>
 
 
         </section>
 
 
         <!-- **projects** -->
-        <!-- <section id="projects">
-
+        <section id="projects" class="mt-2">
+          <h1>
+            <div class="display-5 text-dark text-center mb-6">my projects</div>
+          </h1>
+          
+          <!-- Project Begin -->
+          <!-- Template 
+            <div class="row row-cols-1 row-cols-md-2 my-3 text-center justify-content-center align-content-center gap-4 project-row">
+            <div class="col-md-3 col-6">
+              <div class="card">
+                <img src="Images\Projects\StudySpot.png" class="card-img-top" alt="Study Spot landing page">
+                <div class="card-body">
+                  <h5 class="card-title mb-1">&#127942;Study Spot</h5>
+                  <h6 class="text-secondary"> <em>Jan 2023 - Present</em></h6>
+                  <p class="card-text mb-1">Track how long you've been working in the library. Then, compete and show off your progress with an NFT!</p>
+                </div>  
+          
+                <div class="d-inline mb-3">
+                  <span class="badge bg-primary">React.js</span>
+                  <span class="badge bg-primary">HTML/CSS</span>
+                  <span class="badge bg-primary">Google Maps API</span>
+                </div>
+              </div>
+            </div> -->
+          <div class="row row-cols-1 row-cols-md-2 my-3 text-center justify-content-center align-content-center gap-4 project-row">
+            <div class="col-md-3 col-6">
+              <div class="card">
+                <img src="Images\Projects\StudySpot.png" class="card-img-top" alt="Study Spot landing page">
+                <div class="card-body">
+                  <h5 class="card-title mb-1">&#127942;Study Spot</h5>
+                  <h6 class="text-secondary"> <em>Jan 2023 - Present</em></h6>
+                  <p class="card-text mb-1">Track how long you've been working in the library. Then, compete and show off your progress with an NFT!</p>
+                </div>
+                <div class="d-inline mb-3">
+                  <span class="badge bg-primary">React.js</span>
+                  <span class="badge bg-primary">HTML/CSS</span>
+                  <span class="badge bg-primary">Google Maps API</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md-3 col-6">
+              <div class="card">
+                <img src="Images\Projects\WasteNoMore.png" class="card-img-top" alt="Main interface of the Chess">
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                  <path fill="#ffffff" fill-opacity="1" d="M0,64L48,106.7C96,149,192,235,288,272C384,309,480,299,576,266.7C672,235,768,181,864,144C960,107,1056,85,1152,106.7C1248,128,1344,192,1392,224L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+                </svg> -->
+                <div class="card-body p-3">
+                  <h5 class="card-title mb-1">Waste No-More</h5>
+                  <h6 class="text-secondary"> <em>Jan 2023 - Present</em></h6>
+                  <p class="card-text mb-1">Creating Autonomous solutions to waste management</p>
+                </div>
+                <div class="d-inline mb-3">
+                  <span class="badge bg-primary">Python</span>
+                  <span class="badge bg-primary">Robotics</span>
+                </div>
+              </div>
+            </div>
+            
+          <div class="row row-cols-1 row-cols-md-2 my-3 text-center justify-content-center align-content-center gap-4 project-row">
+            <div class="col-md-3 col-6">
+              <div class="card">
+                <img src="Images\Projects\ChessBoardVisualizer.png" class="card-img-top" alt="Main interface of the Chess">
+                <div class="card-body p-3">
+                  <h5 class="card-title mb-1">Chess Board Visualizer</h5>
+                  <h6 class="text-secondary"> <em>Nov 2022 - Dec 2022</em></h6>
+                  <p class="card-text mb-1">Train your knowledge of the chess board squares!</p>
+                </div>
+                <div class="d-inline mb-3">
+                  <span class="badge bg-primary">React.js</span>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="col-md-3 col-6">
+              <div class="card">
+                <img src="Images\Projects\ChessBoardVisualizer.png" class="card-img-top" alt="Main interface of the Chess">
+                <div class="card-body p-3">
+                  <h5 class="card-title mb-1">Chess Board Visualizer</h5>
+                  <h6 class="text-secondary"> <em>Nov 2022 - Dec 2022</em></h6>
+                  <p class="card-text mb-1">Train your knowledge of the chess board squares!</p>
+                </div>
+                <div class="d-inline mb-3">
+                  <span class="badge bg-primary">React.js</span>
+                </div>
+              </div>
+            </div> -->
 
           
-        </section> -->
+        </section>
         
         <!-- **life as slides** -->
         <!-- https://www.youtube.com/watch?v=mEG3HUeydjY -->
         <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_slidebottom -->
         <section id="life-as-slides">
           <div class="text-center d-flex justify-content-center align-items-center">
-                        <h1>
-                            <div class="display-5 text-dark">life as slides</div>
-                        </h1>
+                <h1>
+                    <div class="display-5 text-dark">life as slides</div>
+                </h1>
           </div>
           <div class="text-center d-flex justify-content-center align-items-center">
                         <p class="text-muted mt-0">
@@ -202,7 +291,6 @@
               </button>
             </div> 
             </div>
-
 
 
         </section>

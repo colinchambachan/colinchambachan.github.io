@@ -80,3 +80,7 @@ body {
     opacity: 1;
   }
 }
+
+.row-cols-1 {
+  width: 100%;
+}

@@ -84,3 +84,12 @@ body {
 .row-cols-1 {
   width: 100%;
 }
+
+.project {
+  transition: all 0.5s;
+}
+
+.project:hover {
+  cursor: pointer;
+  transform: scale(105%);
+}

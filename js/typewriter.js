@@ -6,7 +6,7 @@ function sleep(ms) {
 }
 
 const descriptions = [
-  "An Engineering 1 Student @ McMaster University",
+  "A Software Engineering Student @ McMaster University",
   "A Community leader",
   "A Passionate & Disciplined Learner",
 ];

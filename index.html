@@ -27,6 +27,17 @@
 
 
 <body>
+ <!-- **Warning modal** about depreciation -->
+  <div class="toast mb-3 me-3 fixed-bottom ms-auto w-25" role="alert" id="myToast" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
+    <div class="toast-header">
+      <strong class="me-auto">&#x1F6A7 Notice! &#x1F6A7</strong>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      hey, thanks for visiting! this site is quite outdated but i'm currently working on a <em>new iteration of the site that will be published "soon"</em>. feel free to check out this version or my other socials in the meantime
+    </div>
+  </div>
+
       <!--**navbar**-->
       <nav class="navbar fixed-top navbar-expand-md navbar-light bg-white mb-3" id="navbar">
         <!-- we dont want the content to flow from all the way on one side to the other, so we'll create a container-->
@@ -70,11 +81,13 @@
             </div>
         </div>
     </nav>
-
+    
 
       <!-- **main intro and image** -->
-      <section id = "intro">
-          <div class="masthead" style="background-color: white;">  
+      
+        <div class="masthead" style="background-color: white;">  
+          <section id = "intro">
+           
             <div class="container-lg">
 <!--               
               <div class="col-md-0 col-8 text-center ">
@@ -104,7 +117,7 @@
         </div>
         </section>
         
-
+        
         <!-- **about me** -->
         <section id="about-me" class="">
               <div class="container">
@@ -115,7 +128,7 @@
 
                         <div class="mx-4 mt-4 text-start restrict-text">
                             <p>
-                              Hey &#128075; ! I'm Colin, an Engineering 1 student at <strong class="text-danger">McMaster University</strong> &#127891;, looking to specialize in <strong class="text-danger">Software Engineering</strong> in my second year!
+                              Hey &#128075; ! I'm Colin, a Software Engineering student at <strong class="text-danger">McMaster University</strong>!
                             </p>
 
                             <p>
@@ -163,7 +176,7 @@
                   <img src="Images\Projects\StudySpot.png" class="card-img-top" alt="Study Spot landing page">
                   <div class="card-body">
                     <h5 class="card-title mb-1">&#127942;Study Spot</h5>
-                    <h6 class="text-secondary"> <em>Jan 2023 - Present</em></h6>
+                    <h6 class="text-secondary"> <em>Jan 2023</em></h6>
                     <p class="card-text mb-1">Track how long you've been working in the library. Then, compete and show off your progress with an NFT!</p>
                   </div>
                   <div class="d-inline mb-3">
@@ -183,7 +196,7 @@
                 </svg> -->
                 <div class="card-body p-3">
                   <h5 class="card-title mb-1">Waste No-More</h5>
-                  <h6 class="text-secondary"> <em>Jan 2023 - Present</em></h6>
+                  <h6 class="text-secondary"> <em>Jan 2023 - Mar 2023</em></h6>
                   <p class="card-text mb-1">Creating Autonomous solutions to waste management</p>
                 </div>
                 <div class="d-inline mb-3">
@@ -304,8 +317,8 @@
               </a>
 
               <!-- Instagram  -->
-              <a class="icon" style="color: black;" href="https://www.instagram.com/colin._c/" target="_blank" role="button">
-                <i class="bi bi-instagram"></i> @colin._c
+              <a class="icon" style="color: black;" href="https://www.instagram.com/colinchambachan/" target="_blank" role="button">
+                <i class="bi bi-instagram"></i> @colinchambachan
               </a>
           
             </div>
@@ -327,7 +340,17 @@
 
         <!-- javascript -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</body>
+        <script>
+          document.addEventListener("DOMContentLoaded", function(){
+              var element = document.getElementById("myToast");
+              // Create toast instance
+              var myToast = new bootstrap.Toast(element);
+              myToast.show();
+
+          });
+          </script>
+
+      </body>
 
 
 </html>
